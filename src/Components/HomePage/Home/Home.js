@@ -1,9 +1,16 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Carousel, Container, Row } from 'react-bootstrap';
 import img1 from '../../../banner/img1.jpg'
 import img8 from '../../../banner/img8.jpg'
 import img4 from '../../../banner/img4.jpg'
+import Item from '../Item/Item';
 const Home = () => {
+    const [items, setItems] = useState([])
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setItems(data))
+    }, [])
     return (
         <div>
             <Carousel>
@@ -43,6 +50,18 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <div>
+                <Container>
+                    <Row>
+                        {
+                            items.slice(0, 6).map(item => <Item
+                                key={item._id}
+                                item={item}
+                            ></Item>)
+                        }
+                    </Row>
+                </Container>
+            </div>
         </div>
     );
 };
