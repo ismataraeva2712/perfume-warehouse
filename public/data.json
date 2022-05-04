@@ -1,6 +1,5 @@
 [
     {
-        "_id": "6272ba7382a9dfd0f28be5cc",
         "picture": "https://i.ibb.co/PgQTS2g/img10.jpg",
         "price": 399,
         "quantity": 2,
@@ -9,7 +8,6 @@
         "supplierName": "GAZAK"
     },
     {
-        "_id": "6272ba73a614851767ed1933",
         "picture": "https://i.ibb.co/JnnFzsY/img9.jpg",
         "price": 311,
         "quantity": 4,
@@ -18,7 +16,6 @@
         "supplierName": "BEDLAM"
     },
     {
-        "_id": "6272ba731b1017ec0e890563",
         "picture": "https://i.ibb.co/fdk5jRY/img3.jpg",
         "price": 283,
         "quantity": 3,
@@ -27,7 +24,6 @@
         "supplierName": "CYTREX"
     },
     {
-        "_id": "6272ba73c45df0b8d5b63fcd",
         "picture": "https://i.ibb.co/x6cNSTg/img7.webp",
         "price": 211,
         "quantity": 3,
@@ -36,7 +32,6 @@
         "supplierName": "TURNLING"
     },
     {
-        "_id": "6272ba737fe2755d62e83b3c",
         "picture": "https://i.ibb.co/MDBN6xX/img12.jpg",
         "price": 350,
         "quantity": 6,
@@ -45,7 +40,6 @@
         "supplierName": "MEMORA"
     },
     {
-        "_id": "6272ba739d658e3077176f07",
         "picture": "https://i.ibb.co/4R2S897/img6.webp",
         "price": 316,
         "quantity": 4,
@@ -54,7 +48,6 @@
         "supplierName": "ZOUNDS"
     },
     {
-        "_id": "6272ba73ae4a5e830ffbd3a6",
         "picture": "https://i.ibb.co/3vsD6kg/img20.jpg",
         "price": 263,
         "quantity": 4,
@@ -63,7 +56,6 @@
         "supplierName": "ZILENCIO"
     },
     {
-        "_id": "6272ba73d69cdb9d505ab686",
         "picture": "https://i.ibb.co/0rt144C/img19.jpg",
         "price": 249,
         "quantity": 4,
@@ -72,7 +64,6 @@
         "supplierName": "CINCYR"
     },
     {
-        "_id": "6272ba739affce08b09431b2",
         "picture": "https://i.ibb.co/QH7Pg9N/img16.jpg",
         "price": 300,
         "quantity": 3,
@@ -81,7 +72,6 @@
         "supplierName": "NEPTIDE"
     },
     {
-        "_id": "6272ba733dc74a2676bfd912",
         "picture": "https://i.ibb.co/1QbJCbs/img15.jpg",
         "price": 333,
         "quantity": 6,
@@ -90,7 +80,6 @@
         "supplierName": "NURPLEX"
     },
     {
-        "_id": "6272ba7314e4bdcafadee895",
         "picture": "https://i.ibb.co/x3h9v10/img13.jpg",
         "price": 282,
         "quantity": 4,
@@ -99,7 +88,6 @@
         "supplierName": "MAGNEMO"
     },
     {
-        "_id": "6272ba736a309e196787c6e2",
         "picture": "https://i.ibb.co/Kmtw6qZ/img18.jpg",
         "price": 231,
         "quantity": 4,
@@ -108,7 +96,6 @@
         "supplierName": "COMTOURS"
     },
     {
-        "_id": "6272ba73e664e5a2db7ee1b8",
         "picture": "https://i.ibb.co/HKY5RcW/img5.jpg",
         "price": 222,
         "quantity": 3,
@@ -117,7 +104,6 @@
         "supplierName": "RECRITUBE"
     },
     {
-        "_id": "6272ba7375aa5553a6a4a754",
         "picture": "https://i.ibb.co/jRxHt3M/img8.jpg",
         "price": 324,
         "quantity": 1,
@@ -126,7 +112,6 @@
         "supplierName": "COMTRAK"
     },
     {
-        "_id": "6272ba73935983d82eece774",
         "picture": "https://i.ibb.co/2Wsb0Ch/img17.jpg",
         "price": 275,
         "quantity": 3,

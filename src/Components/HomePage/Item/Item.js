@@ -1,8 +1,13 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './item.css'
 const Item = ({ item }) => {
-    const { picture, name, description, price, quantity, supplierName } = item
+    const { _id, picture, name, description, price, quantity, supplierName } = item
+    const navigate = useNavigate()
+    const handleInventory = id => {
+        navigate(`/inventory/${id}`)
+    }
     return (
         <div className='col-12 col-md-6 col-lg-4 g-5'>
 
@@ -23,7 +28,7 @@ const Item = ({ item }) => {
                         Price :  ${price}
                     </Card.Text>
 
-                    <button className="py-1 my-btn text-white fw-bold rounded-pill px-3 ">  Update</button>
+                    <button onClick={() => handleInventory(_id)} className="py-1 my-btn text-white fw-bold rounded-pill px-3 ">  Update</button>
                 </Card.Body>
 
             </Card>

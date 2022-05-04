@@ -7,7 +7,7 @@ import Item from '../Item/Item';
 const Home = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('data.json')
+        fetch('http://localhost:5000/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -52,6 +52,7 @@ const Home = () => {
             </Carousel>
             <div>
                 <Container>
+                    <h2 className="mt-5">Perfume Collection</h2>
                     <Row>
                         {
                             items.slice(0, 6).map(item => <Item
