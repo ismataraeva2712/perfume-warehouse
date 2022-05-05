@@ -90,9 +90,9 @@ const Inventory = () => {
 
                 </Card>
                 <button onClick={() => handleDeleveryQuantity()} className="py-1 my-5 my-btn text-white fw-bold rounded-pill px-3 ">Delivered</button>
-                <form onSubmit={handleAddQuantity}>
+                <form onSubmit={handleAddQuantity} className='mb-5'>
                     <input type="number" name="quantity" id="" />
-                    <input type="submit" value="Add" />
+                    <input className='my-btn text-white py-1 fw-bold' type="submit" value=" Restock" />
                 </form>
             </Container>
         </div>

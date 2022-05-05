@@ -4,6 +4,7 @@ import img1 from '../../../banner/img1.jpg'
 import img8 from '../../../banner/img8.jpg'
 import img4 from '../../../banner/img4.jpg'
 import Item from '../Item/Item';
+import { Link } from 'react-router-dom';
 const Home = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
@@ -61,6 +62,7 @@ const Home = () => {
                             ></Item>)
                         }
                     </Row>
+                    <Link to='/manageInventory'><button className='my-5 my-btn text-white rounded-pill py-1 px-3 fw-bold'>Manage Inventories</button></Link>
                 </Container>
             </div>
         </div>
