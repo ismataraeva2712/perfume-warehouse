@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import useInventories from '../../Hooks/useInventories';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 import AllProduct from '../AllProduct/AllProduct';
 
-const ManageInventory = () => {
-    const [items, setItems] = useInventories()
+const MyItems = () => {
+    const [myitems, setMyItems] = useState([])
+    const [user] = useAuthState(auth)
+    useEffect(() => {
+        const url = `http://localhost:5000/myItem?email=${user.email}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setMyItems(data))
+    }, [])
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ?? wanna deleted?')
         if (proceed) {
@@ -17,28 +24,29 @@ const ManageInventory = () => {
                 .then(data => {
                     console.log(data)
 
-                    const remainingItem = items.filter(i => i._id !== id)
-                    setItems(remainingItem)
+                    const remainingItem = myitems.filter(i => i._id !== id)
+                    setMyItems(remainingItem)
                 })
         }
     }
 
     return (
         <div>
-            <h2 className='mt-3'>All perfume collection and Manage</h2>
+            <h2 className='mt-3'>My Items</h2>
+            <p> total item: {myitems.length}</p>
             <Container>
                 <Row>
                     {
-                        items.map(item => <AllProduct key={item._id}
+                        myitems.map(item => <AllProduct
+                            key={item._id}
                             item={item}
                             handleDelete={handleDelete}
                         ></AllProduct>)
                     }
                 </Row>
-                <Link to='/addItem'><button className='my-btn text-white p-1 w-25 rounded-pill m-3 fw-bold my-5'>Add new item</button></Link>
             </Container>
         </div>
     );
 };
 
-export default ManageInventory;
+export default MyItems;

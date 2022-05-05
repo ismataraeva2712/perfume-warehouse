@@ -11,6 +11,8 @@ import SIgnup from './Components/LoginPages/Signup/SIgnup';
 import 'react-toastify/dist/ReactToastify.css';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddItem from './Components/AddItem/AddItem';
+import MyItems from './Components/MyItems/MyItems';
+import NotFound from './Components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -27,8 +29,12 @@ function App() {
         <Route path='/addItem' element={<RequireAuth>
           <AddItem></AddItem>
         </RequireAuth>}></Route>
+        <Route path='/myItems' element={<RequireAuth>
+          <MyItems></MyItems>
+        </RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SIgnup></SIgnup>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
     </div>

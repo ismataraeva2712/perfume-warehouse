@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Carousel, Container, Row } from 'react-bootstrap';
-import img1 from '../../../banner/img1.jpg'
-import img8 from '../../../banner/img8.jpg'
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import img2 from '../../../banner/img2.jpg'
+import img19 from '../../../banner/img19.jpg'
 import img4 from '../../../banner/img4.jpg'
+import img1 from '../../../banner/img1.jpg'
 import Item from '../Item/Item';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import './Home.css'
 const Home = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
@@ -18,7 +22,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100" style={{ height: '500px' }}
-                        src={img1}
+                        src={img2}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -29,7 +33,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100" style={{ height: '500px' }}
-                        src={img8}
+                        src={img19}
                         alt="Second slide"
                     />
 
@@ -62,10 +66,30 @@ const Home = () => {
                             ></Item>)
                         }
                     </Row>
-                    <Link to='/manageInventory'><button className='my-5 my-btn text-white rounded-pill py-1 px-3 fw-bold'>Manage Inventories</button></Link>
+                    <Link to='/manageInventory'><button className='my-5 my-btn text-white rounded-pill py-1 px-3'>Manage Inventories</button></Link>
+                    <h2 className='mb-5'>Why choose our warehouse?</h2>
+                    <Row>
+
+                        <Col xs={12} md={6}>
+                            <div className='w-100 shadow-lg customer-pic '>
+                                <img className='w-100  border border-1 rounded  ' src={img1} alt="" />
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <div className='w-100 text-start  my-bg shadow-sm   rounded'>
+                                <h6 className='my-bg p-2' > <FontAwesomeIcon className='arrow' icon={faArrowRight} /> Our warehousing service are known nationwide to be one of the most reliable,safe and affordable</h6>
+                                <h6 className='my-bg p-2' > <FontAwesomeIcon className='arrow' icon={faArrowRight} /> We take pride in delivering the best of warehousing service,at the most reasonable price</h6>
+                                <h6 className='my-bg p-2' > <FontAwesomeIcon className='arrow' icon={faArrowRight} /> Our vast network of warehouse and distribution centers spread out the country.which is key factor in winning the hearts of the cutomers.</h6>
+                                <h6 className='my-bg p-2' > <FontAwesomeIcon className='arrow' icon={faArrowRight} />We do not only provide customizes storage solution that align with your business.but also provide a range of other warehousing service. </h6>
+                                <h6 className='my-bg p-2' > <FontAwesomeIcon className='arrow' icon={faArrowRight} /> Which includes fulfilment,returns management,packaging,spevialty wrapping,transportation,logistic support,customizes logistic process,supply chain management,distribution,inventory control,door-to-door transport,pick and pack operations,cross dock dristribution,labelling,temperature controlled storage solution etc.</h6>
+
+                            </div>
+                        </Col>
+                        <div className='my-5'></div>
+                    </Row>
                 </Container>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

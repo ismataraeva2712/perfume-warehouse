@@ -94,6 +94,7 @@ const Inventory = () => {
                     <input type="number" name="quantity" id="" />
                     <input className='my-btn text-white py-1 fw-bold' type="submit" value=" Restock" />
                 </form>
+                <Link to='/manageInventory'><button className='my-5 my-btn text-white rounded-pill py-1 px-3'>Manage Inventories</button></Link>
             </Container>
         </div>
     );
