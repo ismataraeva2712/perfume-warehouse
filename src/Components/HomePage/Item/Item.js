@@ -18,6 +18,7 @@ const Item = ({ item }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
+
                     <Card.Text >
                         Quantity :  {quantity}
                     </Card.Text>

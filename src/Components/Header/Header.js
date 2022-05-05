@@ -25,7 +25,7 @@ const Header = () => {
                             <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/about">About</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/blog">Blog</NavLink>
                             {
-                                user ? <button onClick={handleLogout} className='btn-primary fw-bold'>Log out</button> :
+                                user ? <button onClick={handleLogout} className='my-btn rounded-pill text-white fw-bold'>Log out</button> :
                                     <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/login">Login</NavLink>
 
                             }
