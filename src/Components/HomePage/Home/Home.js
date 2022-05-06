@@ -8,6 +8,14 @@ import Item from '../Item/Item';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faFileInvoiceDollar } from '@fortawesome/free-solid-svg-icons'
+import { faUsersLine } from '@fortawesome/free-solid-svg-icons'
+import { faEarth } from '@fortawesome/free-solid-svg-icons'
+import { faUserTie } from '@fortawesome/free-solid-svg-icons'
+import { faCartFlatbed } from '@fortawesome/free-solid-svg-icons'
+import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
+import { faUsersRays } from '@fortawesome/free-solid-svg-icons'
 import './Home.css'
 const Home = () => {
     const [items, setItems] = useState([])
@@ -85,8 +93,65 @@ const Home = () => {
 
                             </div>
                         </Col>
-                        <div className='my-5'></div>
                     </Row>
+                    {/* ============================== */}
+                    <div className='my-5'>
+                        <h2 className='mb-5'>About us</h2>
+                        <Row >
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faBuilding} /> 16</h3>
+                                    <h4 className='arrow'>Worldwide warehouse</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faEarth} /> 10</h3>
+                                    <h4 className='arrow'>Countries covered</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faUsersLine} /> 10</h3>
+                                    <h4 className='arrow'>Years of experience</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faUserTie} /> 1500</h3>
+                                    <h4 className='arrow'>Experienced masters</h4>
+                                </div>
+                            </Col>
+                        </Row>
+                        {/* ==================== */}
+                        <Row className='mt-5' >
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faPersonDigging} /> 3000</h3>
+                                    <h4 className='arrow'>Hardworking workers</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faFileInvoiceDollar} /> 0.00 $ </h3>
+                                    <h4 className='arrow'>Free shipping</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faCartFlatbed} /> </h3>
+                                    <h4 className='arrow'>Worldwide delivery</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
+                                    <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faUsersRays} /> 10000</h3>
+                                    <h4 className='arrow'>Happy Clients</h4>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+
                 </Container>
             </div >
         </div >
