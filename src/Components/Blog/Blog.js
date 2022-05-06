@@ -2,11 +2,12 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import myjs from '../../banner/myjs.png'
 import mysql from '../../banner/mysql.png'
+import nodedb from '../../banner/nodedb.png'
 const Blog = () => {
     return (
         <div className='my-3'>
             <Container>
-                <Row>
+                <Row className='mt-5'>
                     <Col xs={12} md={6}>
                         <div>
                             <img className='w-100' src={myjs} alt="" />
@@ -29,7 +30,7 @@ const Blog = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row className='my-3'>
+                <Row className='mt-5'>
                     <Col className='text-start' xs={12} md={6}>
                         <h4>2. Difference between sql and nosql database ?</h4>
                         <p>
@@ -49,6 +50,24 @@ const Blog = () => {
                         <div>
                             <img className='w-100' src={mysql} alt="" />
                         </div>
+                    </Col>
+                </Row>
+                <Row className='mt-5'>
+                    <Col xs={12} md={6}>
+                        <div>
+                            <img className='w-100' src={nodedb} alt="" />
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} className='text-start'>
+                        <h4>3.When should you use nodejs and when should you use mongodb?</h4>
+                        <p>
+                            When any project needs a javascript programming language and  a runtime library  and need compile or interpret code that time we should use nodejs.nodjs is such as tools for javascript language.
+                            <br />
+                            when any project needs the ability to persistently store data ,update data,delet data that time we should use mongodb.mongodb is a populer database.
+                            <br />
+                            Finally we can say mongodb is a database where we can store data ,nodejs helps to connect our client site to database by its server site.
+
+                        </p>
                     </Col>
                 </Row>
             </Container>
