@@ -13,6 +13,10 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddItem from './Components/AddItem/AddItem';
 import MyItems from './Components/MyItems/MyItems';
 import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
+import Blog from './Components/Blog/Blog';
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +24,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/inventory/:id' element={<RequireAuth>
           <Inventory></Inventory>
         </RequireAuth>}></Route>
@@ -37,6 +43,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
+      <Footer></Footer>
     </div>
   );
 }

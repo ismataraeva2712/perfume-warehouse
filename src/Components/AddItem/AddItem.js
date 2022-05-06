@@ -34,7 +34,7 @@ const AddItem = () => {
                 <input className='mb-2' placeholder="Photo url"  {...register("picture")} />
                 <input className='mb-2' placeholder="Price" type="number" {...register("price")} />
                 <input className='mb-2' placeholder="quantity" type="number" {...register("quantity")} />
-                <input className='my-btn text-white fw-bold p-2 rounded-pill w-25 mx-auto' type="submit" value="Add item" />
+                <input className='my-btn mb-5 text-white fw-bold p-2 rounded-pill w-25 mx-auto' type="submit" value="Add item" />
             </form>
         </div>
     );

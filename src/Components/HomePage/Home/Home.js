@@ -151,7 +151,7 @@ const Home = () => {
                             </Col>
                         </Row>
                     </div>
-
+                    <Link to='/about'><button className='mb-5 fw-bold my-btn text-white rounded-pill py-1 px-3'>See more about us</button></Link>
                 </Container>
             </div >
         </div >
