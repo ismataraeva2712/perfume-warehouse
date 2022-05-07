@@ -1,17 +1,39 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import AllProduct from '../AllProduct/AllProduct';
 
 const MyItems = () => {
     const [myitems, setMyItems] = useState([])
     const [user] = useAuthState(auth)
+    const navigate = useNavigate()
     useEffect(() => {
         const url = `http://localhost:5000/myItem?email=${user.email}`
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setMyItems(data))
+        try {
+            fetch(url, {
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+
+                    if (data.message) {
+                        signOut(auth)
+                        navigate('/login')
+                    }
+                    else {
+                        setMyItems(data)
+                    }
+                    console.log('data', data)
+                })
+        }
+        catch (error) {
+            console.log(error)
+        }
     }, [])
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ?? wanna deleted?')
