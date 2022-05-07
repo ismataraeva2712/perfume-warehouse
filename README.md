@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Perfume-Warehouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Perfume-Warehouse live site link :- [https://perfumes-project.web.app/](https://perfumes-project.web.app/).
 
-## Available Scripts
+Perfume-Warehouse server site heroku link :- [https://dry-citadel-76897.herokuapp.com/](https://dry-citadel-76897.herokuapp.com/).
 
-In the project directory, you can run:
+### `Project Description`
+This is the  product of perfume warehouse  website.it is based on warehouse related.and show some warehouse product and manage this product .Manage as like product adding,removing.
 
-### `npm start`
+### `Inventory`
+ Here you will see in home page some product and there is update button.when we will click the button it will go to inventory page.and you can manage product adding and removing.its is protected page.if you login then you will access this page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Manage Inventory`
+when you loged in you see manage inventory.Here you will see all product off warehouse.there is delet and update button.if you want any item remove then click the delet button.you see a popup.then you will ok press then item will remove.update same like inventory page .if you click update button then go to inventory and you will update your product.this is also protected page.and at last you see a button add item.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### `Add Item Details`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+in manage inventory page you will see a button add item.if you want add a product then click the button you will go to add item page and fill the form and click the add button.item will stock inthe manage inventory page.this page also protected.
 
-### `npm run build`
+### `My item details`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+when you loged in you see a page my item.this page is when you add a item that time only your adding item will save this page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Installation and using this project`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**React,MongoDB,Heroku,react bootstrap,react router dom,firebase authentication,react firebase authentication hook,react font-awesome,react-toastify.**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

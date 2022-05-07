@@ -11,7 +11,7 @@ const MyItems = () => {
     const [user] = useAuthState(auth)
     const navigate = useNavigate()
     useEffect(() => {
-        const url = `http://localhost:5000/myItem?email=${user.email}`
+        const url = `https://dry-citadel-76897.herokuapp.com/myItem?email=${user.email}`
         try {
             fetch(url, {
                 headers: {
@@ -38,7 +38,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ?? wanna deleted?')
         if (proceed) {
-            const url = `http://localhost:5000/items/${id}`
+            const url = `https://dry-citadel-76897.herokuapp.com/items/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

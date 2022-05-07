@@ -24,7 +24,7 @@ const About = () => {
                 <div className='my-3'>
                     <h2 className='mb-3'>About us</h2>
                     <h5 className='mb-3'>Our warehousing services are known nationwide to be one of the most reliable,safe and affordable .We are honest ,dependable.we have quality  commitment.we are always improving.Here we show our warehouse information.</h5>
-                    <Row>
+                    <Row >
                         <Col xs={12} md={3}>
                             <div style={{ height: '180px' }} className=' pt-5 my-bg border border-1 rounded'>
                                 <h3 className='arrow'> <FontAwesomeIcon className='arrow' icon={faBuilding} /> 16</h3>

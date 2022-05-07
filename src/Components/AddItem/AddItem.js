@@ -9,7 +9,7 @@ const AddItem = () => {
     const [user] = useAuthState(auth)
     const onSubmit = data => {
         console.log({ ...data, email: user.email })
-        const url = `http://localhost:5000/items`
+        const url = `https://dry-citadel-76897.herokuapp.com/items`
         fetch(url, {
             method: 'POST',
             headers: {

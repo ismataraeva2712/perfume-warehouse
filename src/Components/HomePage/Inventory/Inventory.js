@@ -7,7 +7,7 @@ const Inventory = () => {
     const [update, setUpdate] = useState({})
     const [item, setItem] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/items/${id}`
+        const url = `https://dry-citadel-76897.herokuapp.com/items/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -17,7 +17,7 @@ const Inventory = () => {
         event.preventDefault()
         const newquantity = parseInt(event.target.quantity.value) + parseInt(item.quantity)
         const updatedQuantity = { quantity: newquantity }
-        fetch(`http://localhost:5000/items/${id}`, {
+        fetch(`https://dry-citadel-76897.herokuapp.com/items/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const Inventory = () => {
 
             const newquantity = parseInt(item.quantity) - 1
             const updatedQuantity = { quantity: newquantity }
-            fetch(`http://localhost:5000/items/${id}`, {
+            fetch(`https://dry-citadel-76897.herokuapp.com/items/${id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
