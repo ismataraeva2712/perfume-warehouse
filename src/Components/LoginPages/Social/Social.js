@@ -21,7 +21,7 @@ const Social = () => {
         errorText = <p>{error?.message}</p>
     }
     return (
-        <div>
+        <div className='mb-5'>
             <div className='d-flex justify-content-center align-items-center '>
                 <div style={{ height: '1px' }} className="bg-primary w-50 me-2"></div>
                 <div>or</div>
